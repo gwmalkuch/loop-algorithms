@@ -8,17 +8,17 @@
 </head>
 <body>
         <script>
-        for (var x = 1; x <= 100; x++) {
-                if (x % 3 === 0) && (x % 5 === 0) {
-                        console.log("FizzBuzz");
-                } else if (x % 3 === 0) {
-                        console.log("Fizz");
-                } else if (x % 5 === 0) {
-                        console.log("Buzz");
+        for (var x = 1; x <= 100; x++) { //for loop, var x = to 1, less than or equal to 100, count by 1
+                if (x % 3 === 0 && x % 5 === 0) { //if x is divisible by 3 and 5
+                        console.log("FizzBuzz"); //log FizzBuzz
+                } else if (x % 3 === 0) { //else if x is divisible by 3
+                        console.log("Fizz"); //log Fizz
+                } else if (x % 5 === 0) { //else if x is divisible by 5
+                        console.log("Buzz"); //log Buzz
                 } else {
-                        console.log(x);
-}
-}
+                        console.log(x); //else log x
+                }
+        }
         </script>
 </body>
 </html>

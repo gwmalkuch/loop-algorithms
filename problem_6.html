@@ -8,19 +8,19 @@
 </head>
 <body>
     <script>
-var max = 100, min = 0;
-while (answer != "yes")
-var half = Math.floor((min + max) / 2);
-var answer = prompt ("Type L if answer is too low, H if it's too high, and yes if it's correct." + " Is this your number:" + half + "?");
-if (answer === "L") {
-    min = half;
-} else if (answer === "H") {
-    max = half;
-} else if (anser === "yes") {
-    alert("Got it! I knew my logic was flawless.")
-} else (NaN) {
-    alert("That's not a number!")
-}
+    var max = 100, min = 0; //declare variables for min and max values
+    while (answer != "yes") //if answer is not equal to yes then loop
+        var half = Math.floor((min + max) / 2); //set variable that sets midway point between min and max
+        var answer = prompt ("Type L if answer is too low, H if it's too high, and yes if it's correct." + " Is this your number:" + half + "?"); //prompt asks if the midway point is the number
+        if (answer === "L") { //if answer is too low
+            min = half; //changes the min to that value and repeats loop
+        } else if (answer === "H") { //else if answer is too high
+            max = half; //changes the max to that value and repeats loop
+        } else if (anser === "yes") { //else if answer is equals yes
+            alert("Got it! I knew my logic was flawless.") //alert the user you knew you'd get the answer
+        } else {
+            alert("That's not a number!") //else alert they didn't input a valid number
+        }
     </script>
 </body>
 </html>

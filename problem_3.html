@@ -11,15 +11,16 @@
     var size = 8;
     var line = " ";
     var x = "#";
-    for (var x = 0; x < size / 2; x++) {
-        line = line + "#";
+    for (var x = 0; x < size / 2; x++) { //for loop x = 0, x less than var size, count by 1
+        line = line + "#"; //line output becomes #
     }
-    for (var x = 0; x < size; x++) {
-        if (x % 2 === 0) {
-            console.log(" " + line);
+    for (var x = 0; x < size; x++) { //for loop x = 0, x less than var size, count by 1
+        if (x % 2 === 0) { //if x is even
+            console.log(" " + line); //log space plus line
         } else {
-            console.log(line);
+            console.log(line); //else log line
         }
+    }
     </script>
 </body>
 </html>

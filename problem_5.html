@@ -8,15 +8,15 @@
 </head>
 <body>
     <script>
-var a = 1, b = 0, c, total = 0;
-for (var i = 0; i < 31; i++) {
-    c = a;
-    a = a + b;
-    b = c;
- if (b % 2 !== 0) {
-    total = total + b;
+    var a = 1, b = 0, c, total = 0; //three variables, value a, value b, value c, and total
+    for (var i = 0; i < 31; i++) { //for loop i = 0, i is less than 31, count by 1
+        c = a; //c takes value of a
+        a = a + b; //a takes value of itself plus b
+        b = c; //b takes value of c
+    if (b % 2 !== 0) { //if be is not even
+    total = total + b; //set total equal to itself plus b
  }
-}  console.log(total)
+}  console.log(total) //log total
     </script>
 </body>
 </html>
